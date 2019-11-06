@@ -1,0 +1,7 @@
+<mapper namespace="test">
+	<!-- select标签，封装了SQL语句信息、入参类型、结果映射类型 -->
+	<select id="findUserById" parameterType="java.lang.Integer"
+		resultType="test.domain.User">
+		SELECT * FROM user WHERE id = #{id} 
+	</select>
+</mapper>
